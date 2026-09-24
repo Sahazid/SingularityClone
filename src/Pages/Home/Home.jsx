@@ -5,6 +5,8 @@ import Details from "../../Component/Details/Details";
 import ClientDetails from "../../Component/ClientDetails/ClientDetails";
 import Work from "../../Component/Work/Work";
 import Stories from "../../Component/Stories/Stories";
+import Achivement from "../../Component/Achivement/Achivement";
+import Form from "../../Component/Form/Form";
 
 const Home = () => {
   return (
@@ -15,6 +17,8 @@ const Home = () => {
       <ClientDetails />
       <Work />
       <Stories />
+      <Achivement />
+      <Form />
     </div>
   );
 };

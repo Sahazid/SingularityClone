@@ -1,0 +1,274 @@
+#app {
+  height: 100%;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ==============================
+   STORIES SWIPER
+================================ */
+
+.stories-container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.stories-swiper {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+/* Each slide */
+.stories-swiper .story-slide {
+  width: 100%;
+  height: auto;
+  background: transparent;
+}
+
+/* ==============================
+   STORY CARD
+================================ */
+
+.story-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* ==============================
+   IMAGE
+================================ */
+
+.story-image-container {
+  width: 62%;
+  flex-shrink: 0;
+}
+
+.story-image {
+  display: block;
+  width: 100%;
+  max-width: 770px;
+  height: 430px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+/* ==============================
+   CONTENT
+================================ */
+
+.story-content {
+  width: 38%;
+  color: #000;
+}
+
+/* ==============================
+   COMPANY
+================================ */
+
+.company-container {
+  margin-bottom: 32px;
+}
+
+.company-logo-row {
+  display: flex;
+  align-items: center;
+}
+
+.company-symbol {
+  width: 28px;
+  height: 28px;
+  background: #ed1c24;
+  margin-right: 10px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.company-symbol-corner {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -8px;
+  top: -8px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+}
+
+.company-name {
+  margin: 0;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.company-subtitle {
+  margin: 3px 0 0;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.company-tagline {
+  margin: 8px 0 0;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 14px;
+}
+
+/* ==============================
+   PERSON
+================================ */
+
+.person-container {
+  margin-top: 20px;
+}
+
+.person-name {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #000;
+}
+
+.person-position {
+  margin: 5px 0 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-style: italic;
+  color: #000;
+}
+
+/* ==============================
+   SWIPER PAGINATION
+================================ */
+
+.stories-swiper .swiper-pagination {
+  bottom: 10px;
+}
+
+.stories-swiper .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  margin: 0 4px !important;
+  background: #999;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.stories-swiper .swiper-pagination-bullet-active {
+  width: 32px;
+  border-radius: 999px;
+  background: #000;
+}
+
+/* ==============================
+   TABLET
+================================ */
+
+@media (max-width: 1024px) {
+  .story-card {
+    gap: 25px;
+  }
+
+  .story-image {
+    height: 360px;
+  }
+
+  .company-name {
+    font-size: 30px;
+  }
+
+  .person-name {
+    font-size: 25px;
+  }
+
+  .person-position {
+    font-size: 14px;
+  }
+}
+
+/* ==============================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+  .stories-container {
+    padding: 0 16px;
+  }
+
+  .stories-swiper {
+    padding-top: 10px;
+    padding-bottom: 55px;
+  }
+
+  .story-card {
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;
+  }
+
+  .story-image-container {
+    width: 100%;
+  }
+
+  .story-image {
+    width: 100%;
+    max-width: none;
+    height: 300px;
+    border-radius: 20px;
+  }
+
+  .story-content {
+    width: 100%;
+  }
+
+  .company-name {
+    font-size: 30px;
+  }
+
+  .person-name {
+    font-size: 24px;
+  }
+
+  .person-position {
+    font-size: 14px;
+  }
+}
+
+/* ==============================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 480px) {
+  .story-image {
+    height: 240px;
+  }
+
+  .company-name {
+    font-size: 26px;
+  }
+
+  .person-name {
+    font-size: 21px;
+  }
+
+  .person-position {
+    font-size: 13px;
+  }
+}

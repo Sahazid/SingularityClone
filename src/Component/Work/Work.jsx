@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import homeImage from "../../assets/Homeimage2.png";
 import slideImage2 from "../../assets/slideImage@.png";
 import slideImage3 from "../../assets/slideImage3.png";
+
 const Work = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -49,17 +50,7 @@ const Work = () => {
 
         {/* Slider */}
         <div className="relative overflow-hidden">
-          <div
-            key={currentSlide}
-            className="
-              flex
-              flex-col
-              lg:flex-row
-              items-center
-              gap-12
-              animate-[fadeIn_0.6s_ease-in-out]
-            "
-          >
+          <div className="flex flex-col lg:flex-row items-center gap-12">
             {/* Left Content */}
             <div className="w-full lg:w-1/2">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -74,8 +65,20 @@ const Work = () => {
                 {currentWork.description}
               </p>
 
-              {/* Button */}
-              <div className="relative inline-flex items-center group cursor-pointer h-14 px-4 overflow-hidden rounded-full">
+              {/* Collaborate Button */}
+              <div
+                className="
+                  relative
+                  inline-flex
+                  items-center
+                  group
+                  cursor-pointer
+                  h-14
+                  px-4
+                  overflow-hidden
+                  rounded-full
+                "
+              >
                 <div
                   className="
                     absolute
@@ -125,19 +128,37 @@ const Work = () => {
             </div>
 
             {/* Right Image */}
-            <div className="w-full lg:w-1/2 flex justify-center">
-              <img
-                src={currentWork.image}
-                alt={currentWork.title}
+            <div className="w-full lg:w-1/2">
+              {/* Fixed image area */}
+              <div
                 className="
+                  relative
                   w-full
-                  max-w-xl
-                  rounded-2xl
-                  object-contain
-                  transition-all
-                  duration-700
+                  h-[280px]
+                  sm:h-[350px]
+                  md:h-[400px]
+                  lg:h-[450px]
+                  flex
+                  items-center
+                  justify-center
                 "
-              />
+              >
+                <img
+                  src={currentWork.image}
+                  alt={currentWork.title}
+                  className="
+                    absolute
+                    inset-0
+                    w-full
+                    h-full
+                    object-contain
+                    rounded-2xl
+                    transition-all
+                    duration-700
+                    ease-in-out
+                  "
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -155,6 +176,7 @@ const Work = () => {
                   rounded-full
                   transition-all
                   duration-500
+
                   ${
                     currentSlide === index
                       ? "w-16 bg-[#AD6BBC]"
@@ -167,6 +189,7 @@ const Work = () => {
 
           {/* Navigation */}
           <div className="flex gap-4">
+            {/* Previous */}
             <button
               onClick={previousSlide}
               className="
@@ -188,6 +211,7 @@ const Work = () => {
               <i className="fa-solid fa-arrow-left"></i>
             </button>
 
+            {/* Next */}
             <button
               onClick={nextSlide}
               className="

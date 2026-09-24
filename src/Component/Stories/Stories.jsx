@@ -5,6 +5,7 @@ import homeImage3 from "../../assets/homeImage3.png";
 // import anotherImage from "../../assets/anotherImage.png";
 import storyImageOne from "../../assets/Romel_IDLC.cadfa2a.png";
 import storyImageTwo from "../../assets/Amin khan.f6fa5d2.png";
+import companyWaltonLogo from "../../assets/WaltonLogo.png";
 
 const Stories = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -12,21 +13,24 @@ const Stories = () => {
   const stories = [
     {
       image: homeImage3,
-      company: "IDLC",
-      person: "Jane Alam Romel",
+      company: "IPDC",
+      // finance: "finance happiness",
+      person: "Tareq Islam Shuvo",
       position: "Deputy General Manager & Group Chief Marketing Officer, IDLC",
     },
 
     {
       image: storyImageOne,
       company: "IDLC",
-      person: "RomeJane Alam Romell",
+      finance: "finance happiness",
+      person: "Jane Alam Romel",
       position: "General Manager & Chief Marketing Officer, WALTON",
     },
 
     {
       image: storyImageTwo,
-      company: "Walton",
+      company: "WALTON",
+      // finance: "finance happiness",
       person: "Amin Khan",
       position: "Deputy General Manager & Group Chief Marketing Officer",
     },
@@ -84,13 +88,13 @@ const Stories = () => {
                         </h2>
 
                         <p className="text-[11px] font-medium tracking-wide">
-                          Finance Limited
+                          Finance
                         </p>
                       </div>
                     </div>
 
                     <p className="font-serif italic text-sm mt-2">
-                      financing happiness
+                      {story.finance}
                     </p>
                   </div>
 
