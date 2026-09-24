@@ -52,19 +52,22 @@ const Header = () => {
             <div className="absolute left-0 top-full invisible opacity-0 translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 min-w-[160px]">
               <div className="bg-white rounded-xl shadow-xl border border-gray-100 py-2 overflow-hidden">
                 <NavLink
-                  to="/services/software"
+                  to="/"
+                  // to="/services/software"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-black hover:text-white transition-colors"
                 >
                   Software
                 </NavLink>
                 <NavLink
-                  to="/services/studio"
+                  to="/"
+                  // to="/services/studio"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-black hover:text-white transition-colors"
                 >
                   Studio
                 </NavLink>
                 <NavLink
-                  to="/services/xperience"
+                  to="/"
+                  // to="/services/xperience"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-black hover:text-white transition-colors"
                 >
                   Xperience
@@ -74,7 +77,7 @@ const Header = () => {
           </div>
 
           <li>
-            <NavLink to="/careers" className={navLinkStyles}>
+            <NavLink to="/career" className={navLinkStyles}>
               CAREERS
             </NavLink>
           </li>
@@ -86,9 +89,11 @@ const Header = () => {
         </ul>
 
         {/* Call To Action Button (Desktop Only) */}
-        <button className="hidden lg:block lg:ml-0 md:block md:ml-96 px-5 py-2 border-2 border-black font-medium text-sm rounded-sm cursor-pointer hover:bg-black hover:text-white transition-colors duration-200">
-          START A PROJECT
-        </button>
+        <NavLink to="/contact">
+          <button className="hidden lg:block lg:ml-0 md:block md:ml-96 px-5 py-2 border-2 border-black font-medium text-sm rounded-sm cursor-pointer hover:bg-black hover:text-white transition-colors duration-200">
+            START A PROJECT
+          </button>
+        </NavLink>
 
         {/* Hamburger Toggle Mobile & Tablet */}
         <div className="lg:hidden z-50">

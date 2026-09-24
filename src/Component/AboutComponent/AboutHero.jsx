@@ -1,5 +1,6 @@
 import React from "react";
 import aboutBgBanner from "../../assets/about_page_banner.jpeg";
+import { NavLink } from "react-router-dom";
 
 const AboutHero = () => {
   return (
@@ -41,8 +42,10 @@ const AboutHero = () => {
           </p>
 
           <div className="flex justify-center pt-2">
-            <button
-              className="
+            <NavLink to="/contact">
+              {" "}
+              <button
+                className="
                 bg-gradient-to-r
                 from-red-500
                 via-pink-500
@@ -65,9 +68,10 @@ const AboutHero = () => {
                 duration-300
                 cursor-pointer
               "
-            >
-              Lets's Talk
-            </button>
+              >
+                Lets's Talk
+              </button>
+            </NavLink>
           </div>
         </div>
       </div>

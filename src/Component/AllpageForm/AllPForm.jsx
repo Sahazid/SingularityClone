@@ -3,8 +3,8 @@ import contactGif from "../../assets/Contact Page.gif";
 import "./styles.css";
 const AllPForm = () => {
   return (
-    <div className="relative mt-0 sm:-mt-20  bg-[#DEF3FF]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 lg:pt-25">
+    <div className="relative mt-0 pt-30 sm:-mt-20  bg-[#DEF3FF]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20">
         {/* Heading */}
         <div className="text-center space-y-3 sm:space-y-4">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold">
