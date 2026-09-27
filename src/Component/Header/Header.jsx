@@ -52,21 +52,21 @@ const Header = () => {
             <div className="absolute left-0 top-full invisible opacity-0 translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 min-w-[160px]">
               <div className="bg-white rounded-xl shadow-xl border border-gray-100 py-2 overflow-hidden">
                 <NavLink
-                  to="/"
+                  to="/software"
                   // to="/services/software"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-black hover:text-white transition-colors"
                 >
                   Software
                 </NavLink>
                 <NavLink
-                  to="/"
+                  to="/studio"
                   // to="/services/studio"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-black hover:text-white transition-colors"
                 >
                   Studio
                 </NavLink>
                 <NavLink
-                  to="/"
+                  to="/xperience"
                   // to="/services/xperience"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-black hover:text-white transition-colors"
                 >
@@ -164,21 +164,21 @@ const Header = () => {
             >
               <div className="flex flex-col gap-1 pl-4 bg-gray-50 rounded-2xl py-2 border border-gray-100">
                 <NavLink
-                  to="/services/software"
+                  to="software"
                   className={navLinkStyles}
                   onClick={closeMobileMenu}
                 >
                   Software
                 </NavLink>
                 <NavLink
-                  to="/services/studio"
+                  to="/studio"
                   className={navLinkStyles}
                   onClick={closeMobileMenu}
                 >
                   Studio
                 </NavLink>
                 <NavLink
-                  to="/services/xperience"
+                  to="/xperience"
                   className={navLinkStyles}
                   onClick={closeMobileMenu}
                 >
@@ -190,7 +190,7 @@ const Header = () => {
 
           <li>
             <NavLink
-              to="/careers"
+              to="/career"
               className={navLinkStyles}
               onClick={closeMobileMenu}
             >

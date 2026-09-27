@@ -1,10 +1,13 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
+// import "./Component/S";
 import Layout from "./Pages/Layout/Layout";
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
 import Career from "./Pages/Career/Career";
 import Contact from "./Pages/Contact/Contact";
+import SoftwareService from "./Pages/Services/SoftwareService";
+import Studio from "./Pages/Services/Studio";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,6 +29,18 @@ const router = createBrowserRouter([
         path: "contact",
         element: <Contact />,
       },
+      {
+        path: "software",
+        element: <SoftwareService />,
+      },
+      {
+        path: "studio",
+        element: <Studio />,
+      },
+      // {
+      //   path: "xperience",
+      //   element: <SoftwareService />,
+      // },
     ],
   },
 ]);

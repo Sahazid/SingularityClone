@@ -18,49 +18,143 @@ const CareerPrograms = () => {
         </div>
 
         {/* Images */}
-        <div className="flex flex-col sm:flex-row gap-5 pt-8 sm:pt-10 pb-12 sm:pb-16 lg:pb-20 w-full justify-center">
-          <img
-            className="
-              w-full
-              sm:w-40
-              lg:w-40
-              h-[25rem]
-              sm:h-[28rem]
-              lg:h-[30rem]
-              object-cover
-              grayscale
-              transition-all
-              duration-500
-              ease-in-out
-              hover:sm:w-[30%]
-              rounded-md
-              hover:grayscale-0
+        <div className="flex flex-col sm:flex-row gap-5 pt-8 sm:pt-10 pb-12 sm:pb-16 lg:pb-20 w-full justify-center items-center">
+          {/* Image 1 */}
+          <div className="flex justify-center items-center shrink-0">
+            <div className="relative group">
+              <img
+                className="
+          w-full
+          sm:w-40
+          lg:w-40
+          h-[25rem]
+          sm:h-[28rem]
+          lg:h-[30rem]
+          object-cover
+          grayscale
+          transition-all
+          duration-500
+          ease-in-out
+          group-hover:sm:w-[20rem]
+          rounded-md
+          group-hover:grayscale-0
+        "
+                src={team06}
+                alt="Program"
+              />
 
-            "
-            src={team06}
-            alt="Program"
-          />
+              {/* Dark Overlay */}
+              <div
+                className="
+          absolute
+          inset-0
+          bg-black/0
+          group-hover:bg-black/50
+          rounded-md
+          transition-all
+          duration-500
+          ease-in-out
+          pl-4
+          flex
+          flex-col
+          items-start
+          justify-center
+          pointer-events-none
+        "
+              >
+                <h1
+                  className="
+            text-white
+            text-xl
+            font-semibold
+            opacity-0
+            group-hover:opacity-100
+            transition-opacity
+            duration-500
+          "
+                >
+                  Singularity Seeds
+                </h1>
+                <p
+                  className="text-white cursor-pointer opacity-0
+            group-hover:opacity-100
+            transition-opacity
+            duration-500"
+                >
+                  Learn More{"  >> "}
+                </p>
+              </div>
+            </div>
+          </div>
 
-          <img
-            className="
-              w-full
-              sm:w-40
-              lg:w-40
-              h-[25rem]
-              sm:h-[28rem]
-              lg:h-[30rem]
-              object-cover
-              grayscale
-              transition-all
-              duration-500
-              ease-in-out
-             hover:sm:w-[30%]
-              rounded-md
-              hover:grayscale-0
-            "
-            src={team06}
-            alt="Program"
-          />
+          {/* Image 2 */}
+          <div className="flex justify-center items-center shrink-0">
+            <div className="relative group">
+              <img
+                className="
+          w-full
+          sm:w-40
+          lg:w-40
+          h-[25rem]
+          sm:h-[28rem]
+          lg:h-[30rem]
+          object-cover
+          grayscale
+          transition-all
+          duration-500
+          ease-in-out
+          group-hover:sm:w-[20rem]
+          rounded-md
+          group-hover:grayscale-0
+        "
+                src={team06}
+                alt="Program"
+              />
+
+              {/* Dark Overlay */}
+              <div
+                className="
+          absolute
+          inset-0
+          bg-black/0
+          group-hover:bg-black/50
+          rounded-md
+          transition-all
+          duration-500
+          ease-in-out
+          flex
+          flex-col
+          items-start
+          justify-center
+          pointer-events-none
+          pl-2
+        "
+              >
+                <h1
+                  className="
+            text-white
+            text-md
+            font-semibold
+            opacity-0
+            group-hover:opacity-100
+            transition-opacity
+            duration-500
+          "
+                >
+                  Monthly Employee Recognition Program
+                </h1>
+                <p
+                  className="text-white opacity-0
+                  cursor-pointer
+                  group-hover:opacity-100
+                  transition-opacity
+                  duration-500"
+                >
+                  Learn More {">>"}
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

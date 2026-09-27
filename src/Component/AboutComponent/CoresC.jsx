@@ -1,8 +1,8 @@
 import React from "react";
 
-const CareerIntro = () => {
+const CoresC = () => {
   return (
-    <section className="w-full py-16 sm:py-20 md:py-24 px-6 sm:px-10 md:px-16 lg:px-24">
+    <section className="w-full py-16 sm:py-20 md:py-24 px-6 sm:px-10 md:px-16 lg:px-24 bg-[#E8F5FD]">
       <div className="max-w-[80%] mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20">
         {/* LEFT SIDE - STICKY */}
         <div
@@ -18,12 +18,13 @@ const CareerIntro = () => {
           "
         >
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold">
-            What you can learn from us
+            Singularity’s Core Values
           </h1>
 
           <p className="text-lg sm:text-xl">
-            We take pride in being one of the award winning full-service
-            experiential marketing agency in Bangladesh
+            We are one of the finest destinations to build your digital
+            products. We take pride in being on the top IT companies in the
+            industry.
           </p>
 
           {/* Button */}
@@ -102,9 +103,8 @@ const CareerIntro = () => {
           <div
             className="
               bg-linear-to-r
-              from-cyan-200
-              via-pink-100
-              to-red-100
+                    from-[#c9e7fc]  
+              to-[#FBF3F6]
               px-6
               sm:px-8
               lg:px-10
@@ -118,17 +118,16 @@ const CareerIntro = () => {
             "
           >
             <div className="text-4xl bg-white text-orange-700 p-4 rounded-full">
-              <i className="fa-solid fa-crow"></i>
+              <i class="fa-brands fa-fediverse"></i>
             </div>
 
             <div>
               <h2 className="text-2xl sm:text-3xl font-semibold mb-3">
-                Creative Thinking
+                Collaborative{" "}
               </h2>
 
               <p className="text-base sm:text-lg">
-                We encourage creative thinking and provide an environment where
-                you can explore new ideas and develop innovative solutions.
+                We collaborate to delegate maximum value
               </p>
             </div>
           </div>
@@ -137,9 +136,8 @@ const CareerIntro = () => {
           <div
             className="
               bg-linear-to-r
-              from-cyan-200
-              via-pink-100
-              to-red-100
+                from-[#c9e7fc]  
+              to-[#FBF3F6]
               px-6
               sm:px-8
               lg:px-10
@@ -153,17 +151,16 @@ const CareerIntro = () => {
             "
           >
             <div className="text-4xl bg-white text-orange-700 p-4 rounded-full">
-              <i class="fa-solid fa-brain"></i>
+              <i class="fa-brands fa-artstation"></i>
             </div>
 
             <div>
               <h2 className="text-2xl sm:text-3xl font-semibold mb-3">
-                Team Collaboration
+                Creative{" "}
               </h2>
 
               <p className="text-base sm:text-lg">
-                Work closely with talented people, share your knowledge, and
-                learn from different perspectives and experiences.
+                We believe in the art of imagination
               </p>
             </div>
           </div>
@@ -172,9 +169,8 @@ const CareerIntro = () => {
           <div
             className="
               bg-linear-to-r
-              from-cyan-200
-              via-pink-100
-              to-red-100
+                       from-[#c9e7fc]  
+              to-[#FBF3F6]
               px-6
               sm:px-8
               lg:px-10
@@ -188,17 +184,16 @@ const CareerIntro = () => {
             "
           >
             <div className="text-4xl bg-white text-orange-700 p-4 rounded-full">
-              <i class="fa-solid fa-person-half-dress"></i>
+              <i class="fa-solid fa-bag-shopping"></i>
             </div>
 
             <div>
               <h2 className="text-2xl sm:text-3xl font-semibold mb-3">
-                Professional Growth
+                Professional{" "}
               </h2>
 
               <p className="text-base sm:text-lg">
-                Develop your skills through real-world projects and gain
-                valuable experience that helps you grow professionally.
+                Professionalism is at the heart of what we do
               </p>
             </div>
           </div>
@@ -207,9 +202,8 @@ const CareerIntro = () => {
           <div
             className="
               bg-linear-to-r
-              from-cyan-200
-              via-pink-100
-              to-red-100
+                  from-[#c9e7fc]  
+              to-[#FBF3F6]
               px-6
               sm:px-8
               lg:px-10
@@ -223,17 +217,16 @@ const CareerIntro = () => {
             "
           >
             <div className="text-4xl bg-white text-orange-700 p-4 rounded-full">
-              <i class="fa-solid fa-people-carry-box"></i>
+              <i class="fa-solid fa-head-side-virus"></i>
             </div>
 
             <div>
               <h2 className="text-2xl sm:text-3xl font-semibold mb-3">
-                New Experiences
+                Thoughtful
               </h2>
 
               <p className="text-base sm:text-lg">
-                Take on new challenges, experience different projects, and
-                continuously learn while working with our team.
+                We adapt for every client and pitch
               </p>
             </div>
           </div>
@@ -243,4 +236,4 @@ const CareerIntro = () => {
   );
 };
 
-export default CareerIntro;
+export default CoresC;
