@@ -8,6 +8,7 @@ import Career from "./Pages/Career/Career";
 import Contact from "./Pages/Contact/Contact";
 import SoftwareService from "./Pages/Services/SoftwareService";
 import Studio from "./Pages/Services/Studio";
+import Xperience from "./Pages/Services/Xperience";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -37,10 +38,10 @@ const router = createBrowserRouter([
         path: "studio",
         element: <Studio />,
       },
-      // {
-      //   path: "xperience",
-      //   element: <SoftwareService />,
-      // },
+      {
+        path: "xperience",
+        element: <Xperience />,
+      },
     ],
   },
 ]);

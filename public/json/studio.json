@@ -1,0 +1,64 @@
+{
+    "hero":{
+        "header":"|YOU ASK.| WE BUILD.",
+        "title":"Singularity Studio",
+        "description":"Singularity studios has a passionate team of video editors, animators, 3D asset creators, motion graphics designers and creative visualizers empower you to tell great stories for your business",
+        "image":"/image/HomeGif3.gif"
+    },
+    "services":[
+        {
+            "icon":"fa-solid fa-film",
+            "title":"Corporate Video", 
+            "description":"We make non-advertisement based video content for business, company, corporation, or organization."},
+        {
+            "icon":"fa-brands fa-vimeo-v",
+            "title":"Explainer Video",
+            "description":"Helps you to create amazing videos so that you can present your company's product or service better."
+        },
+        {
+            "icon":"fa-solid fa-atom",
+            "title":"Character Animation",
+            "description":"We help to bring any concept to life, give context to your ideas and visually represent any abstract thoughts."
+        },
+        {
+            "icon":"fa-solid fa-mountain",
+            "title":"Visual Effects",
+            "description":"Tells a better and more engaging story through video. It can be placed on brand or on message to elevate the content."
+        },
+        {
+            "icon":"fa-solid fa-camera-retro",
+            "title":"TVC & DVC",
+            "description":"We are ready to give you pristine quality ideas to create an ingenious visual experience for your business."
+        },
+        {
+            "icon":"fa-solid fa-photo-film",
+            "title":"Digital Post",
+            "description":"Create smart and innovative digital post with us to increase more customer engagement for your business."
+        }
+        
+    ],
+
+    "works":[
+        {
+            "image":"/image/slideImage@.png",
+            "title":"Havana:A Photorealistic reality"
+        },
+        {
+            "image":"image/singularity__M429bV3HI8.png",
+            "title":"IDLC Purnota"
+        },
+        {
+            "image":"image/singularity__HWFxGMcDR6.png",
+            "title":"Square Nokshi Katha"
+        },
+        {
+            "image":"image/singularity__8crTzsFLnG.png",
+            "title":"Walton EHS Corporate Video"
+        },
+        {
+            "image":"image/singularity__5th.png",
+            "title":"Corporate Communications AV for BAT"
+        }
+
+    ]
+}

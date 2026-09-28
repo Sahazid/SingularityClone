@@ -1,26 +1,24 @@
 import React from "react";
 import StudioHero1 from "../../assets/HomeGif3.gif";
-const StudioHero = () => {
+const StudioHero = ({ data }) => {
+  const { header, title, description, image } = data;
+  console.log(header.split("|"));
   return (
     <div className="bg-[#ECF6FF]">
-      <section className="max-w-7xl mx-auto mt-20 ">
+      <section className="container mx-auto mt-20 pb-10">
         <div className="flex flex-col gap-4 md:flex md:justify-center md:gap-4 lg:flex-row lg:justify-between lg:items-center ">
           <div className="max-w-xl space-y-5 p-4 md:p-4 lg:p-0 ">
             <p className="text-md">
-              <span className="text-red-500">YOU ASK.</span>{" "}
-              <span className="text-cyan-500">WE BUILD.</span>
+              <span className="text-cyan-500">{header.split("|")[0]}</span>
+              <span className="text-red-500">{header.split("|")[1]}</span>{" "}
+              <span className="text-cyan-500">{header.split("|")[2]}</span>
             </p>
-            <h1 className="text-4xl font-bold">Singularity Studio</h1>
-            <p className="text-xl">
-              Singularity studios has a passionate team of video editors,
-              animators, 3D asset creators, motion graphics designers and
-              creative visualizers empower you to tell great stories for your
-              business
-            </p>
+            <h1 className="text-4xl font-bold">{title}</h1>
+            <p className="text-xl">{description}</p>
           </div>
 
           <div className="flex justify-center items-center">
-            <img src={StudioHero1} alt="" />
+            <img src={image} alt="" />
           </div>
         </div>
         <div className="flex flex-col justify-center items-center mt-35">

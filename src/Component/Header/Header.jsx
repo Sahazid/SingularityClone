@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Logo from "../../assets/SingularityLogo.png";
 import { NavLink } from "react-router-dom";
 import Hamburger from "hamburger-react";
@@ -6,7 +6,8 @@ import Hamburger from "hamburger-react";
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
   const [isServicesOpen, setServicesOpen] = useState(false);
-
+  const [scrolled, setScrolled] = useState(false);
+  const headerRef = useRef(null);
   const navLinkStyles = ({ isActive }) =>
     `px-4 py-2 rounded-full cursor-pointer transition-all duration-200 block text-center lg:text-left ${
       isActive
@@ -19,12 +20,34 @@ const Header = () => {
     setServicesOpen(false);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, {
+      passive: true,
+    });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="fixed top-0 w-full bg-[#F7FBFF] z-50 border-b border-gray-100">
-      <div className="max-w-7xl mx-auto flex items-center justify-between py-3 px-4 md:px-8">
+    <div
+      ref={headerRef}
+      className={`fixed top-0 w-full ${scrolled ? "bg-white" : "bg-transparent"}  z-50`}
+    >
+      <div className="container mx-auto flex items-center justify-between py-2 md:py-3 px-4 md:px-8">
         {/* Brand Logo */}
         <NavLink to="/" className="cursor-pointer" onClick={closeMobileMenu}>
-          <img className="w-[7rem]" src={Logo} alt="SingularityLogo" />
+          <img
+            className="h-full w-auto max-h-[40px]"
+            src={Logo}
+            alt="SingularityLogo"
+          />
         </NavLink>
 
         {/* Desktop Navigation Menu (Visible on Desktop) */}

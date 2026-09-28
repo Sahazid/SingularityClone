@@ -6,9 +6,11 @@ import Form from "../../Component/Form/Form";
 
 const Layout = () => {
   return (
-    <div>
+    <div className="bg-[#F7FBFF] flex flex-col">
       <Header />
-      <Outlet />
+      <div className="flex-1">
+        <Outlet />
+      </div>
       <Footer />
     </div>
   );

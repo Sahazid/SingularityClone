@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from "react";
-import StudioHero from "../../Component/StudioServices/StudioHero";
-import StudioServices from "../../Component/StudioServices/StudioServices";
-import StudioWorks from "../../Component/StudioServices/StudioWorks";
-import StudioCircular from "../../Component/StudioServices/StudioCircular";
+import XperienceHero from "../../Component/Xperience/XperienceHero";
+import XperienceServices from "../../Component/Xperience/XperienceServices";
+import CircularAnimation from "../../Component/Common/CircularAnimation";
+import XperienceWork from "../../Component/Xperience/XperienceWork";
 import Stories from "../../Component/Stories/Stories";
 import AllPForm from "../../Component/AllpageForm/AllPForm";
-import CircularAnimation from "../../Component/Common/CircularAnimation";
 import { ClipLoader } from "react-spinners";
 
-const Studio = () => {
+const Xperience = () => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const response = async () => {
-    const data = await fetch("/json/studio.json")
+    const data = await fetch("/json/xperience.json")
       .then((res) => res.json())
       .then((res) => setData(res))
       .catch((err) => console.log(err))
@@ -41,16 +40,17 @@ const Studio = () => {
       </div>
     );
   }
+
   return (
     <div>
-      <StudioHero data={data?.hero} />
-      <StudioServices services={data?.services} />
+      <XperienceHero data={data?.hero} />
+      <XperienceServices services={data?.services} />
       <CircularAnimation />
-      <StudioWorks works={data?.works} />
+      <XperienceWork Xperiences={data?.Xperiences} />
       <Stories />
       <AllPForm />
     </div>
   );
 };
 
-export default Studio;
+export default Xperience;

@@ -158,7 +158,7 @@ const WebDevlopment = () => {
           pb-20
         "
       >
-        {/* ================= WEB DEVELOPMENT ================= */}
+        {/* WEB DEVELOPMENT  */}
 
         <section>
           <h1
@@ -196,15 +196,15 @@ const WebDevlopment = () => {
           </div>
         </section>
 
-        {/* ================= MOBILE DEVELOPMENT ================= */}
+        {/*MOBILE DEVELOPMENT  */}
 
         <ProjectSection title="Mobile Development" />
 
-        {/* ================= ECOMMERCE ================= */}
+        {/* ECOMMERCE  */}
 
         <ProjectSection title="Ecommerce" />
 
-        {/* ================= TRADE MARKETING AUTOMATION ================= */}
+        {/* TRADE MARKETING AUTOMATION  */}
 
         <ProjectSection title="Trade Marketing Automation" />
       </div>

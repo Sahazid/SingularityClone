@@ -45,7 +45,7 @@ const Stories = () => {
   };
 
   return (
-    <section className="bg-[#DEF3FF] min-h-[200px] pt-14 pb-20 overflow-hidden">
+    <section className="bg-[#DEF3FF] min-h-[200px] pt-14 pb-20 px-4 md:px-6 lg:px-0 overflow-hidden">
       {/* Heading */}
       <h1 className="text-center text-5xl md:text-6xl font-bold text-black mb-12">
         Success Stories
@@ -63,13 +63,13 @@ const Stories = () => {
           {stories.map((story, index) => (
             <div key={index} className="w-full flex-shrink-0">
               {/* One Complete Story */}
-              <div className="flex flex-col lg:flex-row items-center">
+              <div className="flex flex-col gap-8 lg:flex-row md:flex-row items-center">
                 {/* LEFT IMAGE */}
                 <div className="w-full lg:w-[62%]">
                   <img
                     src={story.image}
                     alt={story.company}
-                    className="w-full max-w-[770px] rounded-[25px] object-cover"
+                    className="w-full max-w-[770px] md:max-w-[350px] lg:max-w-[770px] rounded-[25px] object-cover"
                   />
                 </div>
 
@@ -78,7 +78,7 @@ const Stories = () => {
                   {/* Company Logo */}
                   <div className="mb-8">
                     <div className="flex items-center">
-                      <div className="w-7 h-7 bg-[#ed1c24] mr-2 relative">
+                      <div className="w-4 h-4 md:w-5 md:h-5 bg-[#ed1c24] mr-2 relative">
                         <div className="absolute -top-2 -right-2 w-5 h-5 border-t-2 border-r-2 border-black"></div>
                       </div>
 

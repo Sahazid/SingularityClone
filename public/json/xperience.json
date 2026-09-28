@@ -1,0 +1,65 @@
+{
+    "hero":{
+        "header":"SINGULARITY | XPERIENCE",
+        "description":"Welcome to the world of reality! Where you will experience Virtual, Augmented and Mixed reality and an exciting gaming universe with Singularity Xperinece.",
+        "image":"/image/HomeGif4.gif"
+    },
+    "services":[
+        {
+                "image":"/image/logo1.png",
+                "title":"Augmented Reality",
+                "description":"We overlay virtual object, information or content in the real world to give you a unique experience."
+        },
+        {
+                "image":"/image/logo2.png",
+                "title":"Virtual Reality",
+                "description":"We make amazing experiences engaging consumers in a very unique way giving them a memory to remember."
+        },
+        {
+                "image":"/image/logo3.png",
+                "title":"Mixed Reality",
+                "description":"We augment virtual world in the real world and create a unique viewing experience for your product."
+        },
+        {
+                "image":"/image/logo4.png",
+                "title":"Game Development",
+                "description":"Trust our top minds that uses a clear, effective design process to develop different games as per business need."
+        },
+        {
+                "image":"/image/logo5.png",
+                "title":"Interactive Holography",
+                "description":"We make different on ground activations and products showcasing in events more interesting and interactive."
+        },
+        {
+                "image":"/image/logo6.png",
+                "title":"MR Portal",
+                "description":"Experience the virtual world inside the real world by stepping into it with the next big application of MR and AR."
+        }
+    ],
+    "Xperiences":[
+        {
+            "image":"/image/singularity__pEa0vB7eod.png",
+            "description":"Spaces for the virtual events"
+        },
+        {
+            "image":"/image/singularity__lTzhapNykE.png",
+            "description":"Vaseline Meet the Amazing Girls"
+        },
+        {
+            "image":"/image/singularity__itmaYwkBTs.png",
+            "description":"BanglaIskool"
+        },
+        {
+            "image":"/image/singularity__lJsWnOuAlH.png",
+            "description":"Pepsodent Germinator"
+        },
+        {
+            "image":"/image/singularity__U8M4638720.png",
+            "description":"Nestle BO Bear"
+        },
+        {
+            "image":"/image/singularity__Aca2nTmq3K.png",
+            "description":"Partner VR Engagement"
+        }
+    ]
+}

@@ -1,16 +1,37 @@
 import React from "react";
 import heroOne from "../../assets/HeroGif.gif";
 import Typewriter from "typewriter-effect";
+import { NavLink, Router, useNavigate } from "react-router-dom";
+import Button from "../Common/Button";
 
+const icons = [
+  {
+    title: "Development",
+    icon: "fa-solid fa-laptop-code",
+  },
+  {
+    title: "Quality First",
+    icon: "fa-regular fa-gem",
+  },
+  {
+    title: "Fast Launch",
+    icon: "fa-brands fa-space-awesome",
+  },
+];
 const Hero = () => {
+  const navigate = useNavigate();
   return (
-    <section className="max-w-7xl mx-auto ">
-      <div className="flex flex-col gap-4 md:flex md:justify-center md:gap-4 lg:flex-row lg:justify-between lg:items-center mt-30">
-        <div className="flex justify-center items-center">
-          <img src={heroOne} alt="" />
+    <section className="min-h-screen  flex items-center relative">
+      <div className="container mx-auto flex flex-col gap-4 md:flex md:justify-center md:gap-4 lg:flex-row lg:justify-between lg:items-center pb-0 md:pb-40 lg:pb-0">
+        <div className="flex justify-center items-center w-full">
+          <img
+            src={heroOne}
+            className="max-h-[220px] md:max-h-[420px] "
+            alt=""
+          />
         </div>
-        <div className="max-w-2xl space-y-5 p-4 md:p-4 lg:p-0">
-          <h1 className="text-4xl font-semibold">
+        <div className="max-w-2xl space-y-1 md:space-y-5 p-4 md:p-4 lg:p-0">
+          <h1 className=" text-[clamp(24px,1.88vw,36px)] font-semibold">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
@@ -21,57 +42,37 @@ const Hero = () => {
               }}
             />
           </h1>
-          <p className="text-xl">
+          <p className="text-base md:text-lg">
             We are one of the finest destinations to build your digital
             products. We live to push the boundaries, explore the unexplored,
             and drive measurable results for our partners
           </p>
 
           {/* Colaboration Button  */}
-          <div className="relative inline-flex items-center group cursor-pointer h-14 px-4 overflow-hidden rounded-full">
-            <div className="absolute inset-y-0 right-0 w-14 bg-[#AD6BBC] rounded-full transition-[width] duration-700 ease-in-out group-hover:w-full" />
+          <Button
+            title="Collaborate with us"
+            onClick={() => navigate("/contact")}
+          />
 
-            <span className="relative z-10 text-xl font-medium pr-12 text-black transition-colors duration-500 group-hover:text-white">
-              Collaborate with us
-            </span>
-
-            <div className="absolute right-0 top-0 bottom-0 w-14 z-10 flex items-center justify-center text-xl text-black transition-colors duration-500 group-hover:text-white">
-              <i className="fa-solid fa-arrow-right"></i>
-            </div>
-          </div>
-
-          <div className="flex gap-3 relative group">
-            {/* Card 1 */}
-            <div className="bg-[#0572B2] px-4 py-4 rounded-lg text-white w-16 flex items-center gap-5 overflow-hidden transition-[width,background-color] duration-700 ease-in-out hover:w-[12rem] hover:bg-red-500">
-              <i className="fa-solid fa-laptop-code text-3xl "></i>
-              <span className="text-base font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                Development
-              </span>
-            </div>
-
-            {/* Card 2 */}
-            <div className="bg-[#0572B2] p-4 rounded-lg text-white w-16 flex items-center gap-5 overflow-hidden transition-[width,background-color] duration-700 ease-in-out hover:w-[12rem] hover:bg-red-500">
-              <i className="fa-regular fa-gem text-3xl "></i>
-              <span className="text-base font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                Quality First
-              </span>
-            </div>
-
-            {/* Card 3 */}
-            <div className="bg-[#0572B2] p-4 rounded-lg text-white w-16 flex items-center gap-5 overflow-hidden transition-[width,background-color] duration-700 ease-in-out hover:w-[12rem] hover:bg-red-500">
-              <i className="fa-brands fa-space-awesome text-3xl "></i>
-              <span className="text-base font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                Fast Launch
-              </span>
-            </div>
+          <div className="flex gap-3 relative group mt-2">
+            {icons.map((item) => {
+              return (
+                <div className="bg-[#0572B2] px-4 py-4 rounded-lg text-white w-16 flex items-center gap-5 overflow-hidden transition-[width,background-color] duration-700 ease-in-out hover:w-[12rem] hover:bg-red-500">
+                  <i className={`${item.icon} text-2xl md:text-3xl`}></i>
+                  <span className="text-base font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    {item.title}
+                  </span>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center mt-55">
-        <div className="border-[1px] w-16 h-16 flex justify-center items-center rounded-full text-3xl mb-3 animate-bounce">
+      <div className="absolute bottom-2 md:bottom-0 left-1/2 -translate-x-1/2 flex flex-col justify-center items-center ">
+        <div className="border-[1px] w-10 md:w-16 aspect-square flex justify-center items-center rounded-full text-xl md:text-3xl  animate-bounce">
           <i class="fa-solid fa-arrow-down"></i>
         </div>
-        <p className="text-xl">KEEP SCROLLING</p>
+        <p className=" text-base md:text-xl">KEEP SCROLLING</p>
       </div>
     </section>
   );

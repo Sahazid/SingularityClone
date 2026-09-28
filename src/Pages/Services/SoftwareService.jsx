@@ -5,11 +5,13 @@ import WebDevlopment from "../../Component/SoftwareServices/WebDevlopment";
 import Stories from "../../Component/Stories/Stories";
 import AllPForm from "../../Component/AllpageForm/AllPForm";
 import FlotLogoSec from "../../Component/SoftwareServices/FlotLogoSec";
+import CircularAnimation from "../../Component/Common/CircularAnimation";
 const SoftwareService = () => {
   return (
     <div>
       <SoftwareHero />
       <ServicesSec />
+      <CircularAnimation />
       <WebDevlopment />
       <Stories />
       <FlotLogoSec />
