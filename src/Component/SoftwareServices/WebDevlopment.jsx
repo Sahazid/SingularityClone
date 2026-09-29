@@ -147,7 +147,7 @@ const WebDevlopment = () => {
     <div className="bg-white">
       <div
         className="
-          max-w-7xl
+         container
           mx-auto
           px-5
           sm:px-8

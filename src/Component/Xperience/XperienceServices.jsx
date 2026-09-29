@@ -3,7 +3,15 @@ import React from "react";
 const XperienceServices = ({ services }) => {
   return (
     <div>
-      <div className="max-w-7xl mx-auto mb-20">
+      <div className="container mx-auto mb-20 mt-10 p-4">
+        <h1 className="text-center text-4xl sm:text-5xl lg:text-6xl font-semibold">
+          Serivces
+        </h1>
+        <div className="flex justify-center items-center pt-4">
+          {" "}
+          <p className=" w-20 h-1 bg-cyan-600 rounded-2xl"></p>
+        </div>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-14 lg:gap-y-20 mt-16 sm:mt-20 place-items-center">
           {services?.map((service, index) => (
             <div

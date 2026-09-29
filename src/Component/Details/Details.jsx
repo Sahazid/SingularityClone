@@ -2,8 +2,10 @@ import React from "react";
 import platBanner from "../../assets/platform-banner.6c51d59.gif";
 import platBanner2 from "../../assets/studio-banner.625266a.gif";
 import platBanner3 from "../../assets/xperience-banner.0efa800.gif";
+import { useNavigate } from "react-router-dom";
 
 const Details = () => {
+  const navigate = useNavigate();
   return (
     <div className="max-w-7xl mx-auto mt-20 md:mt-24 lg:mt-30 px-5 sm:px-8 lg:px-10">
       {/* Software */}
@@ -27,8 +29,17 @@ const Details = () => {
             are carefully handpicked only to bring your software solutions.
           </p>
 
-          <div className="relative inline-flex items-center group cursor-pointer h-14 px-4 overflow-hidden rounded-full self-center lg:self-start">
-            <div className="absolute inset-y-0 right-0 w-14 bg-[#AD6BBC] rounded-full transition-all duration-700 ease-in-out group-hover:w-full" />
+          {/* Button */}
+          <div
+            onClick={() => navigate("/software")}
+            className="relative inline-flex items-center group cursor-pointer h-14 px-4 overflow-hidden rounded-full self-center lg:self-start"
+          >
+            <div
+              className="absolute inset-y-0 right-0 w-14 bg-gradient-to-r
+                  from-red-500
+                  via-pink-500
+                  to-purple-500 rounded-full transition-all duration-700 ease-in-out group-hover:w-full"
+            />
 
             <span className="relative z-10 text-lg sm:text-xl font-medium pr-12 text-black transition-colors duration-500 group-hover:text-white">
               See more
@@ -61,8 +72,18 @@ const Details = () => {
             for your business.
           </p>
 
-          <div className="relative inline-flex items-center group cursor-pointer h-14 px-4 overflow-hidden rounded-full self-center lg:self-start">
-            <div className="absolute inset-y-0 right-0 w-14 bg-[#AD6BBC] rounded-full transition-all duration-700 ease-in-out group-hover:w-full" />
+          {/* BUtton */}
+          <div
+            onClick={() => navigate("/studio")}
+            className="relative inline-flex items-center group cursor-pointer h-14 px-4 overflow-hidden rounded-full self-center lg:self-start"
+          >
+            <div
+              className="absolute inset-y-0 right-0 w-14 bg-gradient-to-r
+                  from-red-500
+                  via-pink-500
+                  to-purple-500
+                  rounded-full transition-all duration-700 ease-in-out group-hover:w-full"
+            />
 
             <span className="relative z-10 text-lg sm:text-xl font-medium pr-12 text-black transition-colors duration-500 group-hover:text-white">
               See more
@@ -97,8 +118,17 @@ const Details = () => {
             provide high-end products to the brands we work with.
           </p>
 
-          <div className="relative inline-flex items-center group cursor-pointer h-14 px-4 overflow-hidden rounded-full self-center lg:self-start">
-            <div className="absolute inset-y-0 right-0 w-14 bg-[#AD6BBC] rounded-full transition-all duration-700 ease-in-out group-hover:w-full" />
+          {/* Button  */}
+          <div
+            onClick={() => navigate("/xperience")}
+            className="relative inline-flex items-center group cursor-pointer h-14 px-4 overflow-hidden rounded-full self-center lg:self-start"
+          >
+            <div
+              className="absolute inset-y-0 right-0 w-14 bg-gradient-to-r
+                  from-red-500
+                  via-pink-500
+                  to-purple-500 rounded-full transition-all duration-700 ease-in-out group-hover:w-full"
+            />
 
             <span className="relative z-10 text-lg sm:text-xl font-medium pr-12 text-black transition-colors duration-500 group-hover:text-white">
               See more

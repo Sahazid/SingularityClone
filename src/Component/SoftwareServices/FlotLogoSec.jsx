@@ -49,7 +49,7 @@ const FlotLogoSec = () => {
           </div>
 
           {/* Logo Section */}
-          <div className="flex flex-col gap-20">
+          <div className="flex flex-col gap-20 p-5">
             {/* First Row */}
             <div className="flex justify-between">
               <img

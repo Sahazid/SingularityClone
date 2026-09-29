@@ -11,9 +11,14 @@ const ServicesSec = () => {
     <section className="w-full mb-20">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
         {/* Heading */}
+
         <h1 className="text-center text-4xl sm:text-5xl lg:text-6xl font-semibold">
-          Services
+          Serivces
         </h1>
+        <div className="flex justify-center items-center pt-4">
+          {" "}
+          <p className=" w-20 h-1 bg-cyan-600 rounded-2xl"></p>
+        </div>
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-14 lg:gap-y-16 mt-16 sm:mt-20 place-items-center">

@@ -19,9 +19,9 @@ const MileStones = () => {
 
   return (
     <>
-      <section className="w-full bg-[#E8F5FD] pt-40 pb-40">
-        <div className="max-w-7xl mx-auto ">
-          <div className="flex justify-between">
+      <section className="w-full bg-[#E8F5FD] pt-40 pb-40 px-3">
+        <div className="container mx-auto ">
+          <div className="flex flex-col md:flex-row lg:flex-row justify-between gap-4">
             <h1 className="text-2xl font-bold w-[50%]">Our MileStones</h1>
             <p className="text-xl w-full">
               In our journey, we accomplished through empowering. No matter how
@@ -32,7 +32,7 @@ const MileStones = () => {
           </div>
 
           {/* Content -  Right Side */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 items-center pt-20">
+          <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 items-center pt-20">
             {/* LEFT SIDE */}
             <div className="relative flex items-center justify-center lg:justify-end pr-0 lg:pr-8">
               {/* Big Year */}

@@ -1,5 +1,5 @@
 import React from "react";
-import aboutBgBanner from "../../assets/about_page_banner.jpeg";
+import aboutBgBanner from "../../assets/aboutBanner.jpeg";
 import { NavLink } from "react-router-dom";
 
 const AboutHero = () => {

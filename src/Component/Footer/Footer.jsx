@@ -148,7 +148,10 @@ const Footer = () => {
           {/* Contact Button */}{" "}
           <a
             href="https://singularitybd.com/contact"
-            className=" inline-flex items-center justify-center px-7 py-3 rounded-full bg-gradient-to-r from-[#AD6BBC] to-purple-500 text-white font-semibold shadow-lg hover:scale-105 hover:shadow-purple-500/30 transition-all duration-300 "
+            className=" inline-flex items-center justify-center px-7 py-3 rounded-full bg-gradient-to-r
+                  from-red-500
+                  via-pink-500
+                  to-purple-500 text-white font-semibold shadow-lg hover:scale-105 hover:shadow-purple-500/30 transition-all duration-300 "
           >
             {" "}
             Contact Us <i className="fa-solid fa-arrow-right ml-3"></i>{" "}

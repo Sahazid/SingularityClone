@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import homeImage from "../../assets/Homeimage2.png";
 import slideImage2 from "../../assets/slideImage@.png";
 import slideImage3 from "../../assets/slideImage3.png";
+import { useNavigate } from "react-router-dom";
 
 const Work = () => {
+  const navigate = useNavigate();
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const works = [
@@ -67,6 +69,7 @@ const Work = () => {
 
               {/* Collaborate Button */}
               <div
+                onClick={() => navigate("/contact")}
                 className="
                   relative
                   inline-flex
@@ -85,7 +88,10 @@ const Work = () => {
                     inset-y-0
                     right-0
                     w-14
-                    bg-[#AD6BBC]
+                    bg-gradient-to-r
+                  from-red-500
+                  via-pink-500
+                  to-purple-500
                     rounded-full
                     transition-[width]
                     duration-700

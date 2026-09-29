@@ -90,7 +90,7 @@ const CircularAnimation = () => {
             text-black
 
             sm:text-3xl
-            md:text-4xl
+            md:text-4xl pb-2
             lg:text-[38px]
           "
         >
@@ -111,7 +111,7 @@ const CircularAnimation = () => {
           max-w-[900px]
 
           sm:h-[520px]
-          md:h-[550px]
+          md:h-[460px]
           lg:h-[500px]
         "
       >
